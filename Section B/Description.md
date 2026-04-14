@@ -1,4 +1,4 @@
-# What it does
+# What it does:
 ## This project simulates a 1-axis solar tracking system. It uses two light-dependent resistors (LDRs) positioned on the left and right to constantly monitor ambient light levels. The Arduino compares the analog readings from both sensors. If one side is significantly brighter than the other, the Arduino signals a servo motor to rotate toward the brighter light source, stopping when the light levels are balanced.
 # Why I chose it: 
 ## This project allowed me to combine sensor inputs (LDRs) with a mechanical output (Servo). It demonstrates real-world control systems, showing how microcontrollers can interpret comparative data to adjust physical positioning autonomously.
