@@ -13,3 +13,5 @@
 ### Used in series with the LDRs to create voltage dividers. This converts the changing resistance of the LDRs into varying voltage levels that the Arduino's analog pins can read
 ## Breadboard & Jumper Wires
 ### Used to establish the electrical connections between the Arduino, sensors, and the motor.
+# Challanges:
+## Initially, if the light levels on both LDRs were very close or fluctuating slightly, the servo would constantly twitch back and forth trying to find the absolute perfect center. So to avoid this, I introduced a tolerance  in the code. By adding + 20 to the comparison (if (leftLight > rightLight + 20)), the servo only moves when there is a clear, significant difference in light, eliminating the back and forth movement.
